@@ -11,6 +11,12 @@ const store = new Vuex.Store({
         add : (state, payload) => {
             state.sharedData.push(payload);
         }
+    },
+    actions: {
+        asdf : (store, payload) => {
+            store.state.sharedData.pop();
+            // 비동기 함수를 쓰는 곳
+        }
     }
 });
 
